@@ -1,0 +1,9 @@
+INT(1, 15, n)
+NEWLINE
+
+REP(n, SPACE)
+	INT(1, 50, c)
+END
+NEWLINE
+
+EOF
