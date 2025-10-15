@@ -1,0 +1,32 @@
+\problemname{Base Addition}
+
+\begin{figure}
+\centering
+\begin{verbatim}
+ 37A
++A50
+----
+131A
+\end{verbatim}
+\end{figure}
+
+In the figure, an addition of two numbers is shown -- but in which base are the numbers written, and
+in which base is the addition performed?
+
+The task is to write a program that receives \emph{two terms} and \emph{a sum} in the form
+of three strings. The program should then determine in which bases the addition is correct.
+
+The tests will cover the fifteen bases from 2 to 16. To represent the numbers $10$, $11$, $12$, $13$, $14$, and $15$, 
+the capital letters \texttt{A}, \texttt{B}, \texttt{C}, \texttt{D}, \texttt{E}, and \texttt{F} are used. 
+It can be assumed that there is always at least one base for which the addition is correct.
+
+\section*{Input}
+The input consists of three strings, each with at most $10$ characters, on three consecutive lines. 
+The first two strings represent the terms of the addition, and the third line represents the sum.
+
+\section*{Output}
+The output should consist of a number of integers: all bases for which the addition is correct. 
+The bases should be listed in ascending order.
+
+\section*{Scoring}
+To receive 100 points, your solution must pass all test cases.
