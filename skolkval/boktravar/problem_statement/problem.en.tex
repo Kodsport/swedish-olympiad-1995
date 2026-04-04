@@ -22,11 +22,14 @@ Day&Stack 1&Stack 2&Stack 3&Stack 4&Stack 5&Stack 6\\\hline
 13&\textbf{1}&\textbf{2}&\textbf{4}&\textbf{4}&\textbf{5}&\\\hline
 \end{tabular}
 
-The table above shows how the number of books in the stacks varies over 13 days. In the upcoming tests, the number of books is $\le 50$, the number of stacks is at most $\le 15$, and the number of days is $\le 100$.
+The table above shows how the number of books in the stacks varies over 13 days.
+It will take at most $100$ days before a previously seen arrangement recurs.
 
 \section*{Input}
-The first line consists of an integer --- the number of book stacks $N$.
-The next line consists of $N$ integers --- the number of books in the stacks.
+The first line of input contains the integer $N$ ($1 \leq N \leq 15$), the number of book stacks.
+
+The next line contains $N$ integers, the number of books in each stack, left to right.
+The total number of books is at most $50$.
 
 \section*{Output}
-The output should consist of two integers --- the two first days where the arrangement was repeated. The first day should be output first.
+Print two integers: the two first days where the arrangement was repeated. The first day should be output first.

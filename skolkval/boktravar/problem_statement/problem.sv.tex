@@ -2,7 +2,12 @@
 
 \includegraphics{Travar.png}
 
-På ett bord ligger att antal travar med böcker. Varje dag tas en bok från varje trave. Dessa böcker bildar tillsammans en ny trave till höger om de andra, se figur 1. Om en trave blir tom skjuts travarna samman från höger. Eftersom det finns ett ändligt antal böcker, kommer förr eller senare samma upplägg att återkomma. Din uppgift blir nu att skriva ett program som frågar efter första uppläggets utseende och sedan tar reda på hur lång tid det tar innan ett upplägg som tidigare funnits, återkommer.
+På ett bord ligger ett antal travar med böcker.
+Varje dag tas en bok från varje trave.
+Dessa böcker bildar tillsammans en ny trave till höger om de andra, se figur 1.
+Om en trave blir tom skjuts travarna samman från höger.
+Eftersom det finns ett ändligt antal böcker, kommer förr eller senare samma upplägg att återkomma.
+Din uppgift blir nu att skriva ett program som frågar efter första uppläggets utseende och sedan tar reda på hur lång tid det tar innan ett upplägg som tidigare funnits, återkommer.
 
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
@@ -22,11 +27,14 @@ Dag&Hög 1&Hög 2&Hög 3&Hög 4&Hög 5&Hög 6\\\hline
 13&\textbf{1}&\textbf{2}&\textbf{4}&\textbf{4}&\textbf{5}&\\\hline
 \end{tabular}
 
-I tabellen ovan visas hur antalet böcker i travarna varierar under 13 dagar. I de kommande testerna är antalet böcker $ \le 50$, antalet travar som mest $ \le 15$ och antalet dagar $ \le 100$.
+I tabellen ovan visas hur antalet böcker i travarna varierar under 13 dagar.
+Det kommer ta som mest $100$ dagar innan ett tidigare sett upplägg återkommer.
 
 \section*{Indata}
-Första raden består av ett heltal - antalet boktravar $N$.
-Nästa rad består av $N$ heltal - antalet böcker i travarna
+Den första raden av indata innehåller heltalet $N$ ($1 \leq N \leq 15$), antalet boktravar.
+
+Nästa rad innehåller $N$ heltal, antalet böcker i travarna, från vänster till höger.
+Totala antalet böcker är som mest $50$.
 
 \section*{Utdata}
-Utdata ska bestå av två heltal - de två första dagarna där uppställningen upprepades. Den första dagen ska skrivas ut först.
+Skriv ut två heltal: de två första dagarna där uppställningen upprepades. Den första dagen ska skrivas ut först.
