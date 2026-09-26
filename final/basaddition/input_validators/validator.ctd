@@ -1,8 +1,0 @@
-
-REP(3)
-	REGEX("[1-9A-F]")
-	REGEX("[0-9A-F]{0,9}")
-	NEWLINE
-END
-
-EOF

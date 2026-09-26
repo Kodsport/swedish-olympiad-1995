@@ -7,10 +7,12 @@ using namespace std;
 
 map<char, int> dig;
 
+#define sz(x) ((int)x.size())
+
 typedef long long ll;
 ll tobase(string& s, int base){
 	ll ans = 0;
-	for(int i = 0; i < s.size(); ++i){
+	for(int i = 0; i < sz(s); ++i){
 		ans *= base;
 		ans += dig[s[i]];
 	}
@@ -24,9 +26,9 @@ int main(){
 	cin >> a >> b >> c;
 	int mi = 1;
 	int count = 0;
-	for(int i = 0; i < a.size(); ++i) if(dig[a[i]] > mi) mi = dig[a[i]];
-	for(int i = 0; i < b.size(); ++i) if(dig[b[i]] > mi) mi = dig[b[i]];
-	for(int i = 0; i < c.size(); ++i) if(dig[c[i]] > mi) mi = dig[c[i]];
+	for(int i = 0; i < sz(a); ++i) if(dig[a[i]] > mi) mi = dig[a[i]];
+	for(int i = 0; i < sz(b); ++i) if(dig[b[i]] > mi) mi = dig[b[i]];
+	for(int i = 0; i < sz(c); ++i) if(dig[c[i]] > mi) mi = dig[c[i]];
 	for(int i = mi+1; i <= 16; ++i){
 		if(tobase(a, i) + tobase(b, i) == tobase(c, i)) count++, printf("%d\n", i);
 	}
