@@ -1,8 +1,22 @@
-*~
-.swp
+# LaTeX
+*.out
 *.pdf
-a.out
-__pycache__
-*.log
 *.aux
-*.toc
+*.log
+*.dvi
+# Keep statement-included pdfs
+!**/problem_statement/**/*.pdf
+# Problem2html
+*_html/
+
+# Various
+.vscode/
+__pycache__/
+*.gch
+.DS_Store
+.claude/
+.devin/
+perf.data*
+
+# From skill
+data_generation
